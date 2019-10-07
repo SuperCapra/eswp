@@ -1,0 +1,33 @@
+body {
+	font-family: fantasy;
+	background: center fixed url(C:/Users/Administrator/git/eswp/WebContent/pic/mountains.jpg);
+}
+
+#Presentation {
+	color: #000000;
+	font-style: bold;
+}
+
+p {
+	border: 1px solid #32cd55;
+    color: #778688;
+    font-wight: bold;
+    background-color: #83fc9e;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#table {
+    border: 3px solid #d22d49;
+    background-color: #ffff80;
+    border-radius: 10%;
+    width: 400px;  
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.image {
+	border: 3px solid #d22d49;
+	margin-right: 150px;
+    margin-left: 150px;
+}

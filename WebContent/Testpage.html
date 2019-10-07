@@ -3,27 +3,24 @@
 <head>
 <meta charset="utf-8">
 <title>Milan-Genoa</title>
+<link rel="stylesheet" type="text/css" href="./css/Testpage.css" />
 </head>
 <body>
 
 <h1>Saturday 5<sup>th</sup> of October</h1>
-	<p>
+	<p id="Presentation">
 	Saturday 5<sup>th</sup> of October i made a trip to <i>Genoa</i> from <i>Milan</i> with my bike. <br>
 	You can see the trip at this <a href="https://www.strava.com/activities/2765096143">link</a>. <br>
 	Here there are some image from that day
 	</p>
-	<p>
 	<a href="InstagramBlock.html">
-	<img alt="The Dawn" src="./pic/Dawn.jpg" /> 
+	<img alt="The Dawn" src="./pic/Dawn.jpg" class="image"/> 
 	</a>
-	</p>
 	<p>
 	I passed from the <b>Giova's Pass</b>. Here is the location <br>
 	And here is the pic from upthere
 	</p>
-	<p>
-	<img alt="Giova's Pass" src="./pic/PassoGiova.jpg" /> <br>
-	</p>
+	<img alt="Giova's Pass" src="./pic/PassoGiova.jpg" class="image" />
 	
 	<fieldset>
 		<legend>The position of Giova's Pass</legend>
@@ -35,6 +32,7 @@
 	Now let's see some data in the following table
 	</p>
 	
+	<div id="table">
 	<table>
         <thead>
             <tr>
@@ -68,10 +66,89 @@
             <td>7%</td>            
         </tr>
     </table>
+    </div>
 	
 	<p>
 	<a href="index.html">Back to Index</a>
 	</p>
+	
+	<hr>
+	
+	<p>
+	Now you can calculate the vertical average ascentional 
+	</p>
+	<form action="bau" method="get"> <!-- con il get ci dice molte cose nell'url, con il post invece non ci sono altre informazioni -->
+		<div>
+		<label for="HeightDiff"> Height difference: </label> 
+		<input type="text" name="HeightDiff" maxlength="5" placeholder="Put the height difference here" required/>
+		</div>
+		<div>
+		<label for="Time"> Time: </label> 
+		<input type="text" name="Time" placeholder="Put the time here" required />
+		</div>
+		<div>
+		<input type="hidden" name="invisible value" value="NotShowed" />
+		</div>
+		<div>
+		<label for="day"> Day: </label> 
+		<input type="date" name="day" />
+		</div>		
+		<div>
+		<input type="submit" value="Enter" />
+		</div>
+	</form>
+	 
+	<hr>
+	
+	<p>
+	Choose your vehicle:
+	</p>
+	    <form action="/stuff">
+        <div>
+            <input type="radio" id="favB" name="fav" value="Java" checked />
+            <label for="favB">Bicycle</label>
+            <input type="radio" id="favC" name="fav" value="Python" />
+            <label for="favC">Car</label>
+            <input type="radio" id="favMB" name="fav" value="Cpp" />
+            <label for="favMB">MotorBike</label>
+        </div>
+        <div>
+            <input type="submit" value="Enter" />
+        </div>
+    </form>
+	
+	<p>
+	Choose your vehicle:
+	</p>
+	    <form action="/stuff">
+        <div>
+            <input type="checkbox" id="favB" name="fav" value="Java" checked />
+            <label for="favB">Bicycle</label>
+            <input type="checkbox" id="favC" name="fav" value="Python" />
+            <label for="favC">Car</label>
+            <input type="checkbox" id="favMB" name="fav" value="Cpp" />
+            <label for="favMB">MotorBike</label>
+        </div>
+        <div>
+            <input type="submit" value="Enter" />
+        </div>
+    </form>
+    
+    <p>
+	Choose your vehicle:
+	</p>
+        <form action="/stuff">
+        <div>
+            <select name="vehicle">
+                <option value="none">-</option>
+                <option value="Bicycle" selected>Bicycle</option>
+                <option value="Car">Car</option>
+                <option value="MotorBike">MotorBike</option>
+            </select>
 
+            <input type="submit" value="Enter" />
+        </div>
+    </form>
+	
 </body>
 </html>
