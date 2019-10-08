@@ -14,7 +14,7 @@
 	Here there are some image from that day
 	</p>
 	<a href="InstagramBlock.html">
-	<img alt="The Dawn" src="./pic/Dawn.jpg" class="image"/> 
+	<img alt="The Dawn" src="./pic/Dawn.jpg" class="image" name="Dawn"/> 
 	</a>
 	<p>
 	I passed from the <b>Giova's Pass</b>. Here is the location <br>
@@ -100,7 +100,18 @@
 	 
 	<hr>
 	
-	<p>
+
+	
+	    <textarea id="targetparagraph" rows="20" cols="80"></textarea>
+	<div>
+        <button onclick="getText();">Get text</button>
+        <button onclick="getTextDetailed();">Get text w/ details</button>
+    </div>
+    <script src="./js/getText.js"></script>
+	 
+	<hr>
+	
+	<p id="dotChecker">
 	Choose your vehicle:
 	</p>
 	    <form action="/stuff">
@@ -117,7 +128,7 @@
         </div>
     </form>
 	
-	<p>
+	<p id="squareChecker">
 	Choose your vehicle:
 	</p>
 	    <form action="/stuff">
@@ -134,7 +145,7 @@
         </div>
     </form>
     
-    <p>
+    <p id="listChecker">
 	Choose your vehicle:
 	</p>
         <form action="/stuff">
