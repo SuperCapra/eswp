@@ -39,12 +39,12 @@
                     target.value += "[Request not initialized or error " + this.readyState + "]\n";
                     return;
                 }
-            } catch (e) {
+            } catch (e) { //il try{} catch {} è stato messo per completezza
                 target.value += "[Exception: " + e + "]\n";
 	            return;
             }
 
-            if (this.status != 200) {
+            if (this.status != 200) { //200 significa che è andato tutto bene, il 404 ad esempio è "pagina non trovata"
                 target.value += "[Something went wrong: " + this.status + "]\n";
                 return;
             }

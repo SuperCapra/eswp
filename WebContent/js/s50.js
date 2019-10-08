@@ -8,7 +8,7 @@ $(function() {
     
     $('a').click(function(event) {
         alert('You should not use any link on this page!');
-        event.preventDefault();
+        event.preventDefault(); // con questo non fa andare sulle pagine linkate, se lo togliamo viene fuori il messaggio allert ma non fa andare sulla pagin richiesta
     });
 
     $('html').dblclick(function(event) {
